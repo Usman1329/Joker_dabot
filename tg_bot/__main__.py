@@ -22,18 +22,11 @@ PM_START_TEXT = """
 Hi {}, my name is {}! If you have any questions on how to use me, read /help - and then head to @MarieSupport.
 
 I'm a group manager bot maintained by [this noob](tg://user?id={}). I'm built in python3, using the \
-python-telegram-bot library, and am fully opensource - you can find what makes me tick \
-[here](github.com/Yasir-siddiqui/Joker_dabot)!
-
-Feel free to submit pull requests on github, or contact [my owner](t.me/Yasirsiddiqui), with any bugs, questions \
-or feature requests you might have :)
-I also have a news channel, @JokerHarleynews for announcements on new features, downtime, etc.
-
+python-telegram-bot library, and am fully opensource -
 You can find the list of available commands with /help.
 
 If you're enjoying using me, and/or would like to help me survive in the wild, hit /donate to help fund/upgrade my VPS!
 
-[Click here to add me in your groups](https://telegram.me/Joker_dabot?startgroup=add)
 """
 
 HELP_STRINGS = """
@@ -55,7 +48,7 @@ And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
-If you want to donate, PM [YasiR Siddiqui](t.me/Yasirsiddiqui), and ask for donate. \
+If you want to donate, PM[Matrix Usman](t.me/matrix_usman), and ask for donate. \
 If you really want to donate, it could really help me to upgrade my VPS."""
 
 IMPORTED = {}
