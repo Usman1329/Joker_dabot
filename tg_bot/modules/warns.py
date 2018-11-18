@@ -251,13 +251,13 @@ def remove_warn_filter(bot: Bot, update: Update):
     chat_filters = sql.get_chat_warn_triggers(chat.id)
 
     if not chat_filters:
-        msg.reply_text("No warning filters are active here!")
+        msg.reply_text("No containment protocols active here")
         return
 
     for filt in chat_filters:
         if filt == to_remove:
             sql.remove_warn_filter(chat.id, to_remove)
-            msg.reply_text("Yep, I'll stop warning people for that.")
+            msg.reply_text("That will not trigger containment anymore..")
             raise DispatcherHandlerStop
 
     msg.reply_text("That's not a current warning filter - run /warnlist for all active warning filters.")
